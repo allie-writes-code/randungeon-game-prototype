@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>RanDungeon</title>
+  <meta name="description" content="Randomly generated ASCII dungeon crawler.">
+  <meta name="author" content="JavaScript and HTML by c00pala">
+   
+	
+</head>
+
+<body bgcolor="Peru">
+	
+	<!--Table created with 3 columns and 1 row. Left column for incidents, middle column to provide some spacing, and right for general notifications-->
+	<table style="width:100%" border="1" bgcolor="Sienna">
+	<tr>
+	
+		<!--Left column-->
+	    <td width="33%" valign=top style="padding:10px" bgcolor="Silver">
+		
+			<div id="playerinfodiv"></div>
+			<br>
+			
+		</td>
+		
+		<!--Middle column-->
+	    <td width="34%" valign=top style="padding:10px" bgcolor="Linen">
+			<div id="content" style="white-space:pre; font-size:0"></div>
+			<br>
+			<div id="infodiv"></div>
+			<br>
+		</td>
+		
+		<!--Right column-->
+	    <td width="33%" valign=top style="padding:10px" bgcolor="Linen">
+		
+			<input type="button" onclick="GenRoom();" value="Next Room">
+			<input type="button" onclick="Investigate();" value="Investigate">
+			<br><br>
+			<input type="button" onclick="Attack();" value="Attack">
+			<input type="button" onclick="Defend();" value="Defend">
+			<input type="button" onclick="GatherLoot();" value="Loot">
+			<br><br>
+			<input type="button" onclick="BuyHeal();" value="Heal - 100g">
+			<br><br>
+			
+			<br><br>
+			<div id="attackdiv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(1);" value="ATTACK+">
+			<br>
+			<div id="defencediv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(2);" value="DEFENCE+">
+			<br>
+			<div id="endurancediv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(3);" value="ENDURANCE+">
+			<br>
+			<div id="perceptiondiv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(4);" value="PERCEPTION+">
+			<br>
+			<div id="intelligencediv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(5);" value="INTELLIGENCE+">
+			<br>
+			<div id="luckdiv" style="padding:5px"></div>
+			<input type="button" onclick="BuyStat(6);" value="LUCK+">
+			
+		</td>
+	</tr>
+	
+	<table style="width:100%" border="1" bgcolor="Sienna">
+	<tr>
+		<!--Left column-->
+	    <td width="33%" valign=top style="padding:10px" bgcolor="Silver">
+		<input type="button" onclick='ClearLog("combat");' value="Clear Log">
+		<br><br>
+		<div id="combatlogdiv"></div>
+		</td>
+		
+		<!--Middle column-->
+	    <td width="34%" valign=top style="padding:10px" bgcolor="Silver">
+		<input type="button" onclick='ClearLog("loot");' value="Clear Log">
+		<br><br>
+		<div id="lootlogdiv"></div>
+		</td>
+		
+		<!--Right column-->
+	    <td width="33%" valign=top style="padding:10px" bgcolor="Linen">
+		<img src="Images/Mob1.png"><img src="Images/Mob1.png"><img src="Images/Mob1.png"><img src="Images/Mob1.png">
+		</td>
+	</tr>
+	<script src="js/ControlScript.js"></script>
+</body>
+</html>
