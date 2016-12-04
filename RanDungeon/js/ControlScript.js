@@ -284,7 +284,7 @@ function GenRoom()
 	questSpawned = false;
 	
 	// Set the room's LVL = between half the player's lvl and the player's lvl + 10%, rounded up:
-	roomLvl = getRandomInt(Math.ceil(playerLvl * 0.5), playerLvl + Math.ceil(playerLvl * 0.25));
+	roomLvl = getRandomInt(Math.ceil(playerLvl * 0.9), playerLvl + Math.ceil(playerLvl * 0.30));
 	
 	// Create new Room object - see Room() function in CUSTOM CLASSES:
 	currentRoom = new Room(roomLvl);
@@ -429,8 +429,8 @@ function GenRoom()
 		
 		for (var i = 0; i < currentNumOfMobs; i++)
 		{
-			var minMobLvl = Math.ceil(roomLvl * 0.5);
-			var newMob = new Mob(getRandomInt(minMobLvl, roomLvl + Math.ceil(roomLvl * 0.1)));
+			var minMobLvl = Math.ceil(roomLvl * 0.9);
+			var newMob = new Mob(getRandomInt(minMobLvl, roomLvl + Math.ceil(roomLvl * 0.5)));
 			currentMobs[i] = newMob;
 		}
 	}
