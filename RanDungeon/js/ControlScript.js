@@ -14,7 +14,10 @@ var tileFloorEmptys = [
 	'<img src="Images/Floor-Empty3.png">',
 	'<img src="Images/Floor-Empty4.png">',
 	'<img src="Images/Floor-Empty5.png">',
-	'<img src="Images/Floor-Empty6.png">'
+	'<img src="Images/Floor-Empty6.png">',
+	'<img src="Images/Floor-Empty7.png">',
+	'<img src="Images/Floor-Empty8.png">',
+	'<img src="Images/Floor-Empty9.png">'
 ]
 
 var tileMobs = [
