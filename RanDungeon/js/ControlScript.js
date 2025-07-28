@@ -272,6 +272,8 @@ xpNeeded = xpForNextLvl - playerXP;
 
 playerMaxHP = Math.ceil(playerLvl * 20) + Math.ceil(playerEnd * 1.5);
 playerHP = playerMaxHP;
+// Assign some initial skillpoints
+playerSkillPoints = 3;
 
 // Update the html content the first time:
 UpdateAll();
